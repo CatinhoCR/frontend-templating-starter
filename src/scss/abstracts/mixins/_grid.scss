@@ -1,0 +1,16 @@
+@mixin container {
+  width: 100%;
+  max-width: $desktop;
+}
+
+@mixin side-padding {
+  @include break-max($mobile) {
+    padding-left: $padding-side-mobile;
+    padding-right: $padding-side-mobile;
+  }
+
+  @include break-min($mobile) {
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+  }
+}

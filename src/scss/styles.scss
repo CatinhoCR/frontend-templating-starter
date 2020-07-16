@@ -1,0 +1,33 @@
+// Made using the scss 7:1 pattern
+// See https://sass-guidelin.es/#the-7-1-pattern for more info
+
+// Abstracts - Basic concept here is: this should not output a single line of CSS if compiled by itself.
+@import 'abstracts/variables',
+  'abstracts/mixins';
+
+// Base
+@import 'base/reset',
+  'base/typography',
+  'base/document';
+
+// Modules / Components (Singletons)
+@import 'modules/buttons',
+  'modules/cards',
+  'modules/carousel',
+  'modules/accordion',
+  'modules/dropdown',
+  'modules/tabs';
+
+// Layout
+@import 'layout/grid',
+  'layout/nav',
+  'layout/header',
+  'layout/footer',
+  'layout/sidebar',
+  'layout/forms';
+
+// Pages - Use this for custom pages overrides or sections only relevant to a specific page
+@import 'pages/home';
+
+// Themes - vendor
+// These are not included since it kind of beats the purpose of this initial starter to define this many stylesheets for hypothetical use cases.
